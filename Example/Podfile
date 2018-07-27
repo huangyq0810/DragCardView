@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DragCardView_Example' do
+  pod 'DragCardView', :path => '../'
+
+  target 'DragCardView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
