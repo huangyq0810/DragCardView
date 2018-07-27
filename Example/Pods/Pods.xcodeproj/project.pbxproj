@@ -50,20 +50,20 @@
 		22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DragCardItemView.m; path = DragCardView/Classes/DragCardItemView.m; sourceTree = "<group>"; };
 		23DC2DFD5E63E42D37C0E4264017EA56 /* Pods-DragCardView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		280A624A5B5A81C009D78142F2D93909 /* DragCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DragCardView.m; path = DragCardView/Classes/DragCardView.m; sourceTree = "<group>"; };
-		2834FD411D2ADD1BB8F6A321813602E8 /* Pods_DragCardView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DragCardView_Tests.framework; path = "Pods-DragCardView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2834FD411D2ADD1BB8F6A321813602E8 /* Pods_DragCardView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragCardView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC794C03714455BA925A8C0B2FD0CCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33008B78DDEFCB2A2FCA307B0C612130 /* Pods-DragCardView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DragCardView_Tests.modulemap"; sourceTree = "<group>"; };
-		561466858EE961AF8A375440A18C7853 /* DragCardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DragCardView.framework; path = DragCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		561466858EE961AF8A375440A18C7853 /* DragCardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6ACE2F213844D5386BB398ACA2926316 /* Pods-DragCardView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DragCardView_Example-dummy.m"; sourceTree = "<group>"; };
 		701363A14CC69CFE1DED7B7073E06F23 /* DragCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DragCardView.modulemap; sourceTree = "<group>"; };
 		71513B5D725D0340CE374D06A1DD1129 /* Pods-DragCardView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DragCardView_Example-umbrella.h"; sourceTree = "<group>"; };
-		71879880851395C3637E1CD8892A8374 /* DragCardView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DragCardView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		71879880851395C3637E1CD8892A8374 /* DragCardView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DragCardView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8538B01257B59841CA17B85695789EB3 /* Pods-DragCardView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93818068CE45CE91C4A2F9BA720582BE /* Pods_DragCardView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DragCardView_Example.framework; path = "Pods-DragCardView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93818068CE45CE91C4A2F9BA720582BE /* Pods_DragCardView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragCardView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96EA901CD03334380CEA4139A797B49D /* Pods-DragCardView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DragCardView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A437FB338AD3761293C810AB1E3D9D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9A437FB338AD3761293C810AB1E3D9D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C037DF9E1D369F62633B54D21C3B79B /* Pods-DragCardView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DragCardItemView.h; path = DragCardView/Classes/DragCardItemView.h; sourceTree = "<group>"; };
 		A9B147558F0950454F5CACBA57D41E03 /* DragCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DragCardView-prefix.pch"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		D97CA133A5949E343B6AFFE47DB05D20 /* Pods-DragCardView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Tests-resources.sh"; sourceTree = "<group>"; };
 		DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DargCardHeader.h; path = DragCardView/Classes/DargCardHeader.h; sourceTree = "<group>"; };
 		E361D999F517DF283801899CE0028EEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBB5EC2540E3B244B84BA269F6ECEAFD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EBB5EC2540E3B244B84BA269F6ECEAFD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F38E30292EEB776BB398E0A3FC743AA3 /* DragCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DragCardView.h; path = DragCardView/Classes/DragCardView.h; sourceTree = "<group>"; };
 		FA130E2E83A1DCA1FAD650D60CF946AD /* Pods-DragCardView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DragCardView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAB4549B6DA81B184A9044AD6B066203 /* Pods-DragCardView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DragCardView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -113,11 +113,11 @@
 		2BA367BC1B196471D26562595BC90F6B /* DragCardView */ = {
 			isa = PBXGroup;
 			children = (
-				DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */,
-				A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */,
-				22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */,
 				F38E30292EEB776BB398E0A3FC743AA3 /* DragCardView.h */,
 				280A624A5B5A81C009D78142F2D93909 /* DragCardView.m */,
+				A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */,
+				22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */,
+				DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */,
 				C966AFF63D42B6DA2867E13CCFFEA3D3 /* Pod */,
 				BF64117484F64273107BE751FECC3D93 /* Support Files */,
 			);

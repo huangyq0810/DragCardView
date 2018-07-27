@@ -9,7 +9,7 @@
 #import "DragCardItemView.h"
 #import "DargCardHeader.h"
 
-#define CARD_NUM 3
+#define CARD_NUM 4
 #define MIN_INFO_NUM 10
 #define CARD_SCALE 0.95
 
@@ -135,7 +135,7 @@
                 DragCardItemView *preDraggableView = [self.allCards objectAtIndex:i - 1];
                 draggableView.transform = CGAffineTransformScale(draggableView.transform, pow(CARD_SCALE, i), pow(CARD_SCALE, i));
                 CGRect frame = draggableView.frame;
-                frame.origin.y = preDraggableView.frame.origin.y + (preDraggableView.frame.size.height - frame.size.height) + 10 * pow(0.7, i);
+                frame.origin.y = preDraggableView.frame.origin.y + (preDraggableView.frame.size.height - frame.size.height) + 20 * pow(0.7, i);
                 draggableView.frame = frame;
                 
             } else if (i == CARD_NUM - 1) {
@@ -164,7 +164,7 @@
         DragCardItemView *draggableView = [[DragCardItemView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
         if (i > 0 && i < CARD_NUM - 1) {
             draggableView.transform = CGAffineTransformScale(draggableView.transform, pow(CARD_SCALE, i), pow(CARD_SCALE, i));
-        }else if (i == CARD_NUM - 1){
+        }else if (i == CARD_NUM - 1) {
             draggableView.transform = CGAffineTransformScale(draggableView.transform, pow(CARD_SCALE, i - 1), pow(CARD_SCALE, i - 1));
         }
         draggableView.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
@@ -224,9 +224,9 @@
         for (int i = 1; i < CARD_NUM - 1; i++) {
             DragCardItemView *draggableView = _allCards[i];
             DragCardItemView *preDraggableView = [_allCards objectAtIndex:i - 1];
-            draggableView.transform = CGAffineTransformScale(draggableView.originalTransform, 1 + (1 / CARD_SCALE -1) * fabs(distance/PAN_DISTANCE) * 0.6, 1 + (1/CARD_SCALE - 1) * fabs(distance/PAN_DISTANCE) * 0.6);//0.6为缩减因数，使放大速度始终小于卡片移动速度的
+            draggableView.transform = CGAffineTransformScale(draggableView.originalTransform, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.6, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.8);//0.8为缩减因数，使放大速度始终小于卡片移动速度的
             CGPoint center = draggableView.center;
-            center.y = draggableView.originalCenter.y - (draggableView.originalCenter.y - preDraggableView.originalCenter.y) * fabs(distance/PAN_DISTANCE) * 0.6;//此处的0.6同上
+            center.y = draggableView.originalCenter.y - (draggableView.originalCenter.y - preDraggableView.originalCenter.y) * fabs(distance/PAN_DISTANCE) * 0.8;//此处的0.8同上
             draggableView.center = center;
         }
     }
@@ -242,10 +242,10 @@
 - (void)moveBackCards {
     for (int i = 1; i < CARD_NUM - 1; i++) {
         DragCardItemView *draggableView = _allCards[i];
-        [UIView animateWithDuration:RESET_ANIMATION_TIME animations:^{
+        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseInOut) animations:^{
             draggableView.transform = draggableView.originalTransform;
             draggableView.center = draggableView.originalCenter;
-        }];
+        } completion:nil];
         
     }
 }

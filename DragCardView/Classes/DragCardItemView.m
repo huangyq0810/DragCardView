@@ -131,12 +131,12 @@
         [self leftAction:velocity];
     } else {
         //回到原点
-        [UIView animateWithDuration:RESET_ANIMATION_TIME animations:^{
+        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseInOut) animations:^{
             self.center = self.originalCenter;
             self.transform = CGAffineTransformMakeRotation(0);
             self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
             self.noButton.transform = CGAffineTransformMakeScale(1, 1);
-        }];
+        } completion:nil];
         [self.delegate moveBackCards];
     }
 }
