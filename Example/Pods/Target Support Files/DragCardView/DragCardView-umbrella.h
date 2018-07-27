@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "DargCardHeader.h"
+#import "DragCardItemView.h"
+#import "DragCardView.h"
 
 FOUNDATION_EXPORT double DragCardViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char DragCardViewVersionString[];

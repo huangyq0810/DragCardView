@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface NoneViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end

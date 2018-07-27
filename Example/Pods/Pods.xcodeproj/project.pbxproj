@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		02023F5D7A4032E45D325BD28672644B /* Pods-DragCardView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71513B5D725D0340CE374D06A1DD1129 /* Pods-DragCardView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		261643E0B1898DDDA8249A0D7747643E /* DragCardView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B65C16936DFA9B0270237467B6C82 /* DragCardView-dummy.m */; };
+		1531015F2E8568AE79A22D4A03BC1DE9 /* DragCardView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CA7F6852074AB6879444569A2E7C97 /* DragCardView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F139A12DEB45655777B36F6E4A99EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2D5C8D30B09843EF4D5A4C4C653A191D /* Pods-DragCardView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C40A6CDA9063D51C55D409AE086E795D /* Pods-DragCardView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B943413D648836B81C8418E36FB08E7 /* DragCardView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D018972C73A561A6B2A5E1A12E9B55AE /* DragCardView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B773DFD428E0FBE71423372479271B2 /* DragCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */; };
+		3EE8FBE08B140A35299F812DD664ECF6 /* DargCardHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46587F52956CBBF644BE9A330C9959B8 /* Pods-DragCardView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DAAED8227217035F98C9912639B1FF /* Pods-DragCardView_Tests-dummy.m */; };
-		731E562DB2AA080275123BD83D7FFBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7776C3A734F7F84D71543B7F4BF98553 /* DragCardView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B415B4A12A5CDA377F3FCCD9179115C /* DragCardView-dummy.m */; };
+		7CD087A97ED52FF0661B1F53E2952F9C /* DragCardItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D7A182BEFAFDF6CF73ADF2F4BCDB48B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8449C95E210ABEB6006A88F9 /* DragCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8449C95C210ABEB6006A88F9 /* DragCardView.h */; };
-		8449C95F210ABEB6006A88F9 /* DragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8449C95D210ABEB6006A88F9 /* DragCardView.m */; };
-		8449C962210ABECD006A88F9 /* DragCardItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8449C960210ABECD006A88F9 /* DragCardItemView.h */; };
-		8449C963210ABECD006A88F9 /* DragCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8449C961210ABECD006A88F9 /* DragCardItemView.m */; };
+		9AA45120D17F162F52C343836F0A922B /* DragCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 280A624A5B5A81C009D78142F2D93909 /* DragCardView.m */; };
 		B464DD6BCBF48C87A467560F210E656D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		EC6EE195031A35DEB457A50D1F6242D4 /* Pods-DragCardView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE2F213844D5386BB398ACA2926316 /* Pods-DragCardView_Example-dummy.m */; };
+		FA8A188ACB0489A70F90BADD5345B0E7 /* DragCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = F38E30292EEB776BB398E0A3FC743AA3 /* DragCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0D164C620647C13DEF82A6BC143601C2;
+			remoteGlobalIDString = CEA88561B7727AE6863CD41166CE4A3C;
 			remoteInfo = DragCardView;
 		};
 		F60DE7785E50973A667AF08C5D4F494E /* PBXContainerItemProxy */ = {
@@ -42,62 +43,51 @@
 /* Begin PBXFileReference section */
 		02411F767C041757E0A7F1CEC7A1D950 /* Pods-DragCardView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DragCardView_Example.modulemap"; sourceTree = "<group>"; };
 		06C3BF3E525C233071EEFEA3D1AC613A /* Pods-DragCardView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Example-resources.sh"; sourceTree = "<group>"; };
+		0B415B4A12A5CDA377F3FCCD9179115C /* DragCardView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DragCardView-dummy.m"; sourceTree = "<group>"; };
+		12CA7F6852074AB6879444569A2E7C97 /* DragCardView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DragCardView-umbrella.h"; sourceTree = "<group>"; };
 		12E00C42FB70F8A776E00DF16FFC9058 /* Pods-DragCardView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		149A7AD3210855D191FFE4A550C86FB7 /* Pods-DragCardView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1C73B26DC5F92EE5EAF05DAA0D8C0CD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E0B65C16936DFA9B0270237467B6C82 /* DragCardView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DragCardView-dummy.m"; sourceTree = "<group>"; };
+		22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DragCardItemView.m; path = DragCardView/Classes/DragCardItemView.m; sourceTree = "<group>"; };
 		23DC2DFD5E63E42D37C0E4264017EA56 /* Pods-DragCardView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2834FD411D2ADD1BB8F6A321813602E8 /* Pods_DragCardView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragCardView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E8800970E8F75ADBEA3250E31223C /* DragCardView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DragCardView.podspec; sourceTree = "<group>"; };
+		280A624A5B5A81C009D78142F2D93909 /* DragCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DragCardView.m; path = DragCardView/Classes/DragCardView.m; sourceTree = "<group>"; };
+		2834FD411D2ADD1BB8F6A321813602E8 /* Pods_DragCardView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DragCardView_Tests.framework; path = "Pods-DragCardView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC794C03714455BA925A8C0B2FD0CCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33008B78DDEFCB2A2FCA307B0C612130 /* Pods-DragCardView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DragCardView_Tests.modulemap"; sourceTree = "<group>"; };
-		561466858EE961AF8A375440A18C7853 /* DragCardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		561466858EE961AF8A375440A18C7853 /* DragCardView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DragCardView.framework; path = DragCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6ACE2F213844D5386BB398ACA2926316 /* Pods-DragCardView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DragCardView_Example-dummy.m"; sourceTree = "<group>"; };
+		701363A14CC69CFE1DED7B7073E06F23 /* DragCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DragCardView.modulemap; sourceTree = "<group>"; };
 		71513B5D725D0340CE374D06A1DD1129 /* Pods-DragCardView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DragCardView_Example-umbrella.h"; sourceTree = "<group>"; };
-		8449C94F210ABDCD006A88F9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8449C952210ABDCD006A88F9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8449C953210ABE34006A88F9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		8449C954210ABE41006A88F9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		8449C955210ABE4B006A88F9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		8449C956210ABE54006A88F9 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		8449C957210ABE5F006A88F9 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		8449C958210ABE69006A88F9 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
-		8449C959210ABE72006A88F9 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
-		8449C95A210ABE7B006A88F9 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
-		8449C95B210ABE86006A88F9 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
-		8449C95C210ABEB6006A88F9 /* DragCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCardView.h; sourceTree = "<group>"; };
-		8449C95D210ABEB6006A88F9 /* DragCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCardView.m; sourceTree = "<group>"; };
-		8449C960210ABECD006A88F9 /* DragCardItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCardItemView.h; sourceTree = "<group>"; };
-		8449C961210ABECD006A88F9 /* DragCardItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCardItemView.m; sourceTree = "<group>"; };
-		8449C964210ABEE8006A88F9 /* DargCardHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DargCardHeader.h; sourceTree = "<group>"; };
+		71879880851395C3637E1CD8892A8374 /* DragCardView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DragCardView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8538B01257B59841CA17B85695789EB3 /* Pods-DragCardView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8CA08AA21B7AF0C39A412E3EB64F59C0 /* DragCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DragCardView.modulemap; sourceTree = "<group>"; };
-		91CD4A09890F25D027CEAC2938275CC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		93818068CE45CE91C4A2F9BA720582BE /* Pods_DragCardView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragCardView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93818068CE45CE91C4A2F9BA720582BE /* Pods_DragCardView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DragCardView_Example.framework; path = "Pods-DragCardView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96EA901CD03334380CEA4139A797B49D /* Pods-DragCardView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DragCardView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A437FB338AD3761293C810AB1E3D9D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9C037DF9E1D369F62633B54D21C3B79B /* Pods-DragCardView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DragCardItemView.h; path = DragCardView/Classes/DragCardItemView.h; sourceTree = "<group>"; };
+		A9B147558F0950454F5CACBA57D41E03 /* DragCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DragCardView-prefix.pch"; sourceTree = "<group>"; };
 		AB1104AC4F6ACA6345EC224A97B68F20 /* Pods-DragCardView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragCardView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AD4BAB9F57E79C14A58E92B1D0F26A06 /* DragCardView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DragCardView.xcconfig; sourceTree = "<group>"; };
 		B5576BC44B1D74A6E9B17B5C19915D43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DAAED8227217035F98C9912639B1FF /* Pods-DragCardView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DragCardView_Tests-dummy.m"; sourceTree = "<group>"; };
 		C40A6CDA9063D51C55D409AE086E795D /* Pods-DragCardView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DragCardView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D018972C73A561A6B2A5E1A12E9B55AE /* DragCardView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DragCardView-umbrella.h"; sourceTree = "<group>"; };
 		D095A23A557278DA21033564B5CD1B60 /* Pods-DragCardView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DragCardView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D4A0C9DE23D4CA6E265507972F476137 /* DragCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DragCardView-prefix.pch"; sourceTree = "<group>"; };
-		D894EC1680E539C400DFBE761F412F69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D97CA133A5949E343B6AFFE47DB05D20 /* Pods-DragCardView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragCardView_Tests-resources.sh"; sourceTree = "<group>"; };
+		DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DargCardHeader.h; path = DragCardView/Classes/DargCardHeader.h; sourceTree = "<group>"; };
 		E361D999F517DF283801899CE0028EEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB5EC2540E3B244B84BA269F6ECEAFD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F38E30292EEB776BB398E0A3FC743AA3 /* DragCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DragCardView.h; path = DragCardView/Classes/DragCardView.h; sourceTree = "<group>"; };
 		FA130E2E83A1DCA1FAD650D60CF946AD /* Pods-DragCardView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DragCardView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAB4549B6DA81B184A9044AD6B066203 /* Pods-DragCardView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DragCardView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB481F84162EC3A65FC7D5676FDBE02E /* DragCardView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DragCardView.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8454B7377E2257F9B7B22AE5B6EA4E70 /* Frameworks */ = {
+		C12A4A246202ED705AEB94AD122EABC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731E562DB2AA080275123BD83D7FFBEE /* Foundation.framework in Frameworks */,
+				1F139A12DEB45655777B36F6E4A99EC4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +110,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BA367BC1B196471D26562595BC90F6B /* DragCardView */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B03F41C310187698D29FC937AD910 /* DargCardHeader.h */,
+				A207B12E6D0F4A292AAC4EFDD1CE3D39 /* DragCardItemView.h */,
+				22E06E61B8F49195A2167732FAED6A37 /* DragCardItemView.m */,
+				F38E30292EEB776BB398E0A3FC743AA3 /* DragCardView.h */,
+				280A624A5B5A81C009D78142F2D93909 /* DragCardView.m */,
+				C966AFF63D42B6DA2867E13CCFFEA3D3 /* Pod */,
+				BF64117484F64273107BE751FECC3D93 /* Support Files */,
+			);
+			name = DragCardView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		55384E4C596C09F40E4973B03F53C85C /* Pods-DragCardView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,81 +161,23 @@
 			path = "Target Support Files/Pods-DragCardView_Example";
 			sourceTree = "<group>";
 		};
-		69DBD7258D6614607522224ACBC097B9 /* DragCardView */ = {
-			isa = PBXGroup;
-			children = (
-				8449C951210ABDCD006A88F9 /* Assets */,
-				8449C94E210ABDCD006A88F9 /* Classes */,
-				C6F9615667951A65AFB542E61BE8C556 /* Pod */,
-				9C718316B291FAFA0F1F1BE5F101EF08 /* Support Files */,
-			);
-			name = DragCardView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				83CD0D8AA43ABE42BB252198D5429C1C /* Development Pods */,
+				93440C99C45EFFCE6E3F571A31A4ED44 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				E8472524BA9872DDB7B96D60A4C7B32F /* Products */,
 				B481D92D1E3F960AB8E31B86D08E1A5D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83CD0D8AA43ABE42BB252198D5429C1C /* Development Pods */ = {
+		93440C99C45EFFCE6E3F571A31A4ED44 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				69DBD7258D6614607522224ACBC097B9 /* DragCardView */,
+				2BA367BC1B196471D26562595BC90F6B /* DragCardView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		8449C94E210ABDCD006A88F9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8449C94F210ABDCD006A88F9 /* .gitkeep */,
-				8449C95C210ABEB6006A88F9 /* DragCardView.h */,
-				8449C95D210ABEB6006A88F9 /* DragCardView.m */,
-				8449C960210ABECD006A88F9 /* DragCardItemView.h */,
-				8449C961210ABECD006A88F9 /* DragCardItemView.m */,
-				8449C964210ABEE8006A88F9 /* DargCardHeader.h */,
-			);
-			name = Classes;
-			path = DragCardView/Classes;
-			sourceTree = "<group>";
-		};
-		8449C951210ABDCD006A88F9 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				8449C953210ABE34006A88F9 /* 1.jpg */,
-				8449C954210ABE41006A88F9 /* 2.jpg */,
-				8449C955210ABE4B006A88F9 /* 3.jpg */,
-				8449C956210ABE54006A88F9 /* 4.jpg */,
-				8449C957210ABE5F006A88F9 /* 5.jpg */,
-				8449C958210ABE69006A88F9 /* 6.jpg */,
-				8449C959210ABE72006A88F9 /* 7.jpg */,
-				8449C95A210ABE7B006A88F9 /* 8.jpg */,
-				8449C95B210ABE86006A88F9 /* 9.jpg */,
-				8449C952210ABDCD006A88F9 /* .gitkeep */,
-			);
-			name = Assets;
-			path = DragCardView/Assets;
-			sourceTree = "<group>";
-		};
-		9C718316B291FAFA0F1F1BE5F101EF08 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8CA08AA21B7AF0C39A412E3EB64F59C0 /* DragCardView.modulemap */,
-				AD4BAB9F57E79C14A58E92B1D0F26A06 /* DragCardView.xcconfig */,
-				1E0B65C16936DFA9B0270237467B6C82 /* DragCardView-dummy.m */,
-				D4A0C9DE23D4CA6E265507972F476137 /* DragCardView-prefix.pch */,
-				D018972C73A561A6B2A5E1A12E9B55AE /* DragCardView-umbrella.h */,
-				1C73B26DC5F92EE5EAF05DAA0D8C0CD3 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DragCardView";
 			sourceTree = "<group>";
 		};
 		B481D92D1E3F960AB8E31B86D08E1A5D /* Targets Support Files */ = {
@@ -250,12 +197,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C6F9615667951A65AFB542E61BE8C556 /* Pod */ = {
+		BF64117484F64273107BE751FECC3D93 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				294E8800970E8F75ADBEA3250E31223C /* DragCardView.podspec */,
-				91CD4A09890F25D027CEAC2938275CC3 /* LICENSE */,
-				D894EC1680E539C400DFBE761F412F69 /* README.md */,
+				701363A14CC69CFE1DED7B7073E06F23 /* DragCardView.modulemap */,
+				FB481F84162EC3A65FC7D5676FDBE02E /* DragCardView.xcconfig */,
+				0B415B4A12A5CDA377F3FCCD9179115C /* DragCardView-dummy.m */,
+				A9B147558F0950454F5CACBA57D41E03 /* DragCardView-prefix.pch */,
+				12CA7F6852074AB6879444569A2E7C97 /* DragCardView-umbrella.h */,
+				2BC794C03714455BA925A8C0B2FD0CCE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DragCardView";
+			sourceTree = "<group>";
+		};
+		C966AFF63D42B6DA2867E13CCFFEA3D3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				71879880851395C3637E1CD8892A8374 /* DragCardView.podspec */,
+				9A437FB338AD3761293C810AB1E3D9D4 /* LICENSE */,
+				EBB5EC2540E3B244B84BA269F6ECEAFD /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -289,21 +250,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBAB0A77067288C48DD39386608CEF6D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8449C962210ABECD006A88F9 /* DragCardItemView.h in Headers */,
-				3B943413D648836B81C8418E36FB08E7 /* DragCardView-umbrella.h in Headers */,
-				8449C95E210ABEB6006A88F9 /* DragCardView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D5D6EBF17E9DCFF84D0C85BD624612DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				02023F5D7A4032E45D325BD28672644B /* Pods-DragCardView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0327C74D3909EED70BE68FF13DCCE6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE8FBE08B140A35299F812DD664ECF6 /* DargCardHeader.h in Headers */,
+				7CD087A97ED52FF0661B1F53E2952F9C /* DragCardItemView.h in Headers */,
+				1531015F2E8568AE79A22D4A03BC1DE9 /* DragCardView-umbrella.h in Headers */,
+				FA8A188ACB0489A70F90BADD5345B0E7 /* DragCardView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,23 +290,6 @@
 			productReference = 2834FD411D2ADD1BB8F6A321813602E8 /* Pods_DragCardView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0D164C620647C13DEF82A6BC143601C2 /* DragCardView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F00EF7ACBCEDE8937040F4302B97AF27 /* Build configuration list for PBXNativeTarget "DragCardView" */;
-			buildPhases = (
-				54C4A19D08B39078E13759CAEF57D5C9 /* Sources */,
-				8454B7377E2257F9B7B22AE5B6EA4E70 /* Frameworks */,
-				CBAB0A77067288C48DD39386608CEF6D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DragCardView;
-			productName = DragCardView;
-			productReference = 561466858EE961AF8A375440A18C7853 /* DragCardView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		C1A5B9B9C7F300F0144750C61F42C1AD /* Pods-DragCardView_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D3F1F701D570DAB0ACC0229DC7ED9C /* Build configuration list for PBXNativeTarget "Pods-DragCardView_Example" */;
@@ -361,6 +306,23 @@
 			name = "Pods-DragCardView_Example";
 			productName = "Pods-DragCardView_Example";
 			productReference = 93818068CE45CE91C4A2F9BA720582BE /* Pods_DragCardView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEA88561B7727AE6863CD41166CE4A3C /* DragCardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2F26605519834AA68B1DA4DB19AE14 /* Build configuration list for PBXNativeTarget "DragCardView" */;
+			buildPhases = (
+				8993BED4407C9A86F2986D41167CE49E /* Sources */,
+				C12A4A246202ED705AEB94AD122EABC9 /* Frameworks */,
+				F0327C74D3909EED70BE68FF13DCCE6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragCardView;
+			productName = DragCardView;
+			productReference = 561466858EE961AF8A375440A18C7853 /* DragCardView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -384,7 +346,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D164C620647C13DEF82A6BC143601C2 /* DragCardView */,
+				CEA88561B7727AE6863CD41166CE4A3C /* DragCardView */,
 				C1A5B9B9C7F300F0144750C61F42C1AD /* Pods-DragCardView_Example */,
 				0A5AE8E32C17209BC1813C35CFD1F32B /* Pods-DragCardView_Tests */,
 			);
@@ -392,13 +354,13 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		54C4A19D08B39078E13759CAEF57D5C9 /* Sources */ = {
+		8993BED4407C9A86F2986D41167CE49E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8449C95F210ABEB6006A88F9 /* DragCardView.m in Sources */,
-				8449C963210ABECD006A88F9 /* DragCardItemView.m in Sources */,
-				261643E0B1898DDDA8249A0D7747643E /* DragCardView-dummy.m in Sources */,
+				3B773DFD428E0FBE71423372479271B2 /* DragCardItemView.m in Sources */,
+				7776C3A734F7F84D71543B7F4BF98553 /* DragCardView-dummy.m in Sources */,
+				9AA45120D17F162F52C343836F0A922B /* DragCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +386,7 @@
 		7A208EA378122F2F12DAC946594A8BEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DragCardView;
-			target = 0D164C620647C13DEF82A6BC143601C2 /* DragCardView */;
+			target = CEA88561B7727AE6863CD41166CE4A3C /* DragCardView */;
 			targetProxy = 878001F8299338C01B81818E473B2AF6 /* PBXContainerItemProxy */;
 		};
 		8531790134EC77DB00CABED6398E9B65 /* PBXTargetDependency */ = {
@@ -502,37 +464,6 @@
 			};
 			name = Debug;
 		};
-		34F62C66692B6F05769E586C2E73B151 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD4BAB9F57E79C14A58E92B1D0F26A06 /* DragCardView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DragCardView/DragCardView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DragCardView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DragCardView/DragCardView.modulemap";
-				PRODUCT_MODULE_NAME = DragCardView;
-				PRODUCT_NAME = DragCardView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		588E9D7FDCD612C29EAC6E8DFEAC5D3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 149A7AD3210855D191FFE4A550C86FB7 /* Pods-DragCardView_Tests.release.xcconfig */;
@@ -566,36 +497,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		797DEEB18907730247393D61BB638028 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD4BAB9F57E79C14A58E92B1D0F26A06 /* DragCardView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DragCardView/DragCardView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DragCardView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DragCardView/DragCardView.modulemap";
-				PRODUCT_MODULE_NAME = DragCardView;
-				PRODUCT_NAME = DragCardView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -752,6 +653,67 @@
 			};
 			name = Release;
 		};
+		D1B413B573CB0A816629761AB5A846D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB481F84162EC3A65FC7D5676FDBE02E /* DragCardView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DragCardView/DragCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DragCardView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DragCardView/DragCardView.modulemap";
+				PRODUCT_MODULE_NAME = DragCardView;
+				PRODUCT_NAME = DragCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAA3EACD944D22A9EBFD661842E6F734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB481F84162EC3A65FC7D5676FDBE02E /* DragCardView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DragCardView/DragCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DragCardView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DragCardView/DragCardView.modulemap";
+				PRODUCT_MODULE_NAME = DragCardView;
+				PRODUCT_NAME = DragCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -764,20 +726,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5E2F26605519834AA68B1DA4DB19AE14 /* Build configuration list for PBXNativeTarget "DragCardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B413B573CB0A816629761AB5A846D1 /* Debug */,
+				DAA3EACD944D22A9EBFD661842E6F734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8D3F1F701D570DAB0ACC0229DC7ED9C /* Build configuration list for PBXNativeTarget "Pods-DragCardView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21DE342138B9FE7D420EA5740B6F7DF0 /* Debug */,
 				C46949E98E4218FF78DA2A9FF430CF8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F00EF7ACBCEDE8937040F4302B97AF27 /* Build configuration list for PBXNativeTarget "DragCardView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				797DEEB18907730247393D61BB638028 /* Debug */,
-				34F62C66692B6F05769E586C2E73B151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

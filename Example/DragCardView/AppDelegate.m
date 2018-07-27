@@ -6,9 +6,9 @@
 //  Copyright (c) 2018 huangyq0810. All rights reserved.
 //
 
-#import "NoneAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation NoneAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

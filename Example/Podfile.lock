@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DragCardView: a367df14a7decee0900fc18302f021d2d096b834
+  DragCardView: d2a877916fdb9dd0787dd6e5b7ce8a9030d2dbe9
 
 PODFILE CHECKSUM: 7fe62fefc60d3f6f87308fc8fe5037dada1fbabb
 

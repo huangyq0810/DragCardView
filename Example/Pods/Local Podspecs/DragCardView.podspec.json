@@ -1,8 +1,8 @@
 {
   "name": "DragCardView",
   "version": "0.1.0",
-  "summary": "A short description of DragCardView.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A View Can Drag.",
+  "description": "DragCardView以层叠卡片形式展示多个拽动和滑动功能的View",
   "homepage": "https://github.com/huangyq0810/DragCardView",
   "license": {
     "type": "MIT",
