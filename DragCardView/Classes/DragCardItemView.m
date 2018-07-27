@@ -127,9 +127,9 @@
     
     if (xFromCenter > 0 && (distance > ACTION_MARGIN_RIGHT || velocity.x > ACTION_VELOCITY)) {
         [self rightAction:velocity];
-    }else if (xFromCenter < 0 && (distance <- ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)){
+    } else if (xFromCenter < 0 && (distance <- ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)){
         [self leftAction:velocity];
-    }else{
+    } else {
         //回到原点
         [UIView animateWithDuration:RESET_ANIMATION_TIME animations:^{
             self.center = self.originalCenter;
@@ -177,7 +177,7 @@
     CGFloat duration = fabs(displace / vel);
     if (duration > 0.6) {
         duration = 0.6;
-    }else if (duration < 0.3){
+    } else if (duration < 0.3){
         duration = 0.3;
     }
     [UIView animateWithDuration:duration animations:^{

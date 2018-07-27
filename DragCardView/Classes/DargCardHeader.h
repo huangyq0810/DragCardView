@@ -11,7 +11,7 @@
 #define iPhone5AndEarlyDevice (([[UIScreen mainScreen] bounds].size.height*[[UIScreen mainScreen] bounds].size.width <= 320*568)?YES:NO)
 #define Iphone6 (([[UIScreen mainScreen] bounds].size.height*[[UIScreen mainScreen] bounds].size.width <= 375*667)?YES:NO)
 
-static inline float lengthFit(float iphone6PlusLength){
+static inline float lengthFit(float iphone6PlusLength) {
     if (iPhone5AndEarlyDevice) {
         return iphone6PlusLength * 320.0f / 414.0f;
     }

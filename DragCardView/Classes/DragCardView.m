@@ -287,7 +287,7 @@
     [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
         self.likeBtn.transform = CGAffineTransformMakeScale(1.2, 1.2);
         dragView.center = finishPoint;
-        dragView.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
+        dragView.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
     } completion:^(BOOL finished) {
         self.likeBtn.transform = CGAffineTransformMakeScale(1, 1);
         [self swipCard:dragView Direction:YES];
