@@ -49,7 +49,7 @@
 - (void)addControls {
     UIButton *reloadBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [reloadBtn setTitle:@"重置" forState:UIControlStateNormal];
-    reloadBtn.frame = CGRectMake(self.center.x - 25, self.frame.size.height - 60, 50, 30);
+    reloadBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - 25, [UIScreen mainScreen].bounds.size.height - 60, 50, 30);
     [reloadBtn addTarget:self action:@selector(refreshAllCards) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:reloadBtn];
     
