@@ -1,0 +1,22 @@
+{
+  "name": "DragCardView",
+  "version": "0.1.0",
+  "summary": "A short description of DragCardView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/huangyq0810/DragCardView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "huangyq0810": "huangyq@adnonstop.com"
+  },
+  "source": {
+    "git": "https://github.com/huangyq0810/DragCardView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DragCardView/Classes/**/*"
+}

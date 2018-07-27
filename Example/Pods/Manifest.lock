@@ -1,0 +1,16 @@
+PODS:
+  - DragCardView (0.1.0)
+
+DEPENDENCIES:
+  - DragCardView (from `../`)
+
+EXTERNAL SOURCES:
+  DragCardView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DragCardView: a367df14a7decee0900fc18302f021d2d096b834
+
+PODFILE CHECKSUM: 7fe62fefc60d3f6f87308fc8fe5037dada1fbabb
+
+COCOAPODS: 1.5.3
