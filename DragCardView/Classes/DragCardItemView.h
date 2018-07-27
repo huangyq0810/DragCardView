@@ -11,7 +11,7 @@
 #define RESET_ANIMATION_TIME 0.3
 
 @class DragCardItemView;
-@protocol DragCardViewDelegate <NSObject>
+@protocol DragCardItemViewDelegate <NSObject>
 
 -(void)swipCard:(DragCardItemView *)cardView Direction:(BOOL)isRight;
 -(void)moveCards:(CGFloat)distance;
@@ -22,7 +22,7 @@
 
 @interface DragCardItemView : UIView
 
-@property (nonatomic, weak) id<DragCardViewDelegate> delegate;
+@property (nonatomic, weak) id<DragCardItemViewDelegate> delegate;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @property (nonatomic, assign) CGAffineTransform originalTransform;
 @property (nonatomic, assign) CGPoint originalPoint;

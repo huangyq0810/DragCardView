@@ -13,7 +13,7 @@
 #define MIN_INFO_NUM 10
 #define CARD_SCALE 0.95
 
-@interface DragCardView ()<DragCardViewDelegate>
+@interface DragCardView ()<DragCardItemViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *allCards;
 
