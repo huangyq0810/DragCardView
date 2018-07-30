@@ -30,8 +30,8 @@
 - (NSMutableArray *)requestSourceData {
     // 模拟网络请求
     NSMutableArray *objectArray = [@[] mutableCopy];
-    for (int i = 1; i <= 10; i++) {
-        [objectArray addObject:@{@"number":[NSString stringWithFormat:@"%ld",self.dragView.page * 10 + i],@"image":[NSString stringWithFormat:@"%d.jpg",i]}];
+    for (NSInteger i = 1; i <= 10; i++) {
+        [objectArray addObject:@{@"number":[NSString stringWithFormat:@"%ld",self.dragView.page * 10 + i],@"image":[NSString stringWithFormat:@"%ld.jpg",(long)i]}];
     }
     return objectArray;
 }

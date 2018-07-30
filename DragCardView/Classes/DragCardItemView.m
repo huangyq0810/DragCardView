@@ -119,7 +119,9 @@
 
 /* 滑动时候，按钮变大 */
 - (void)updateOverLay:(CGFloat)distance {
-    [self.delegate moveCards:distance];
+    if ([self.delegate respondsToSelector:@selector(moveCards:)]) {
+        [self.delegate moveCards:distance];
+    }
 }
 
 /* 后续动作判断 */
@@ -137,7 +139,10 @@
             self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
             self.noButton.transform = CGAffineTransformMakeScale(1, 1);
         } completion:nil];
-        [self.delegate moveBackCards];
+        if ([self.delegate respondsToSelector:@selector(moveBackCards)]) {
+            [self.delegate moveBackCards];
+        }
+        
     }
 }
 
@@ -160,9 +165,13 @@
         self.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
     } completion:^(BOOL finished) {
         self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
-        [self.delegate swipCard:self Direction:YES];
+        if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
+            [self.delegate swipCard:self Direction:YES];
+        }
     }];
-    [self.delegate adjustOtherCards];
+    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
+        [self.delegate adjustOtherCards];
+    }
 }
 
 - (void)leftAction:(CGPoint)velocity {
@@ -186,10 +195,13 @@
         self.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
     } completion:^(BOOL finished) {
         self.noButton.transform = CGAffineTransformMakeScale(1, 1);
-        [self.delegate swipCard:self Direction:NO];
-        
+        if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
+            [self.delegate swipCard:self Direction:NO];
+        }
     }];
-    [self.delegate adjustOtherCards];
+    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
+        [self.delegate adjustOtherCards];
+    }
 }
 
 - (void)rightButtonClickAction {
@@ -203,11 +215,13 @@
         self.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
     } completion:^(BOOL finished) {
         self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
-        [self.delegate swipCard:self Direction:YES];
-        
+        if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
+            [self.delegate swipCard:self Direction:YES];
+        }
     }];
-    
-    [self.delegate adjustOtherCards];
+    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
+        [self.delegate adjustOtherCards];
+    }
 }
 
 - (void)leftButtonClickAction {
@@ -223,7 +237,9 @@
         self.noButton.transform = CGAffineTransformMakeScale(1, 1);
         [self.delegate swipCard:self Direction:NO];
     }];
-    [self.delegate adjustOtherCards];
+    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
+        [self.delegate adjustOtherCards];
+    }
 }
 
 @end

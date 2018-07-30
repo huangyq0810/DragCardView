@@ -71,7 +71,7 @@
 - (void)refreshAllCards {
     self.sourceObject = [@[] mutableCopy];
     self.page = 0;
-    for (int i = 0; i < _allCards.count; i++) {
+    for (NSInteger i = 0; i < _allCards.count; i++) {
         DragCardItemView *card = self.allCards[i];
         CGPoint finishPoint = CGPointMake(-CARD_WIDTH, 2 * PAN_DISTANCE + card.frame.origin.y);
         [UIView animateKeyframesWithDuration:0.5 delay:0.06 * i options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
@@ -112,7 +112,7 @@
 }
 /* 重新加载卡片 */
 - (void)loadAllCards {
-    for (int i = 0; i < self.allCards.count; i++) {
+    for (NSInteger i = 0; i < self.allCards.count; i++) {
         DragCardItemView *draggableView = self.allCards[i];
         if ([self.sourceObject firstObject]) {
             draggableView.infoDict = [self.sourceObject firstObject];
@@ -125,7 +125,7 @@
         }
     }
     
-    for (int i = 0; i < _allCards.count; i++) {
+    for (NSInteger i = 0; i < _allCards.count; i++) {
         DragCardItemView *draggableView = self.allCards[i];
         CGPoint finishPoint = CGPointMake(self.center.x, CARD_HEIGHT / 2 + 40);
         [UIView animateKeyframesWithDuration:0.5 delay:0.06 * i options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
@@ -160,7 +160,7 @@
 
 /* 首次添加卡片 */
 - (void)addCards {
-    for (int i = 0; i < CARD_NUM; i++) {
+    for (NSInteger i = 0; i < CARD_NUM; i++) {
         DragCardItemView *draggableView = [[DragCardItemView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
         if (i > 0 && i < CARD_NUM - 1) {
             draggableView.transform = CGAffineTransformScale(draggableView.transform, pow(CARD_SCALE, i), pow(CARD_SCALE, i));
@@ -177,7 +177,7 @@
         }
         
     }
-    for (int i = (int)CARD_NUM - 1; i >= 0; i--) {
+    for (NSInteger i = (NSInteger)CARD_NUM - 1; i >= 0; i--) {
         [self addSubview:_allCards[i]];
     }
 }
@@ -208,7 +208,7 @@
         cardView.hidden = YES;//如果没有数据则隐藏卡片
     }
     
-    for (int i = 0; i < CARD_NUM; i++) {
+    for (NSInteger i = 0; i < CARD_NUM; i++) {
         DragCardItemView *draggableView = [_allCards objectAtIndex:i];
         draggableView.originalCenter = draggableView.center;
         draggableView.originalTransform = draggableView.transform;
@@ -220,8 +220,8 @@
 
 /* 滑动中更改其他卡片位置 */
 - (void)moveCards:(CGFloat)distance {
-    if (fabs(distance)<= PAN_DISTANCE) {
-        for (int i = 1; i < CARD_NUM - 1; i++) {
+    if (fabs(distance) <= PAN_DISTANCE) {
+        for (NSInteger i = 1; i < CARD_NUM - 1; i++) {
             DragCardItemView *draggableView = _allCards[i];
             DragCardItemView *preDraggableView = [_allCards objectAtIndex:i - 1];
             draggableView.transform = CGAffineTransformScale(draggableView.originalTransform, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.6, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.8);//0.8为缩减因数，使放大速度始终小于卡片移动速度的
@@ -240,7 +240,7 @@
 
 /* 滑动终止后复原其他卡片 */
 - (void)moveBackCards {
-    for (int i = 1; i < CARD_NUM - 1; i++) {
+    for (NSInteger i = 1; i < CARD_NUM - 1; i++) {
         DragCardItemView *draggableView = _allCards[i];
         [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseInOut) animations:^{
             draggableView.transform = draggableView.originalTransform;
@@ -253,7 +253,7 @@
 /* 滑动后调整其他卡片位置 */
 - (void)adjustOtherCards {
     [UIView animateWithDuration:0.2 animations:^{
-        for (int i = 1; i < CARD_NUM - 1; i++) {
+        for (NSInteger i = 1; i < CARD_NUM - 1; i++) {
             DragCardItemView *draggableView = self.allCards[i];
             DragCardItemView *preDraggableView = [self.allCards objectAtIndex:i - 1];
             draggableView.transform = preDraggableView.originalTransform;
@@ -276,10 +276,10 @@
 }
 
 - (void)rightButtonClickAction {
-    if (_flag == YES) {
+    if (self.flag == YES || self.allCards.count == 0) {
         return;
     }
-    _flag = YES;
+    self.flag = YES;
     DragCardItemView *dragView = self.allCards[0];
     CGPoint finishPoint = CGPointMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH * 2 / 3, 2 * PAN_DISTANCE + dragView.frame.origin.y);
     [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
@@ -295,11 +295,11 @@
 }
 
 - (void)leftButtonClickAction {
-    if (_flag == YES) {
+    if (self.flag == YES || self.allCards.count == 0) {
         return;
     }
     
-    _flag = YES;
+    self.flag = YES;
     DragCardItemView *dragView = self.allCards[0];
     CGPoint finishPoint = CGPointMake(-CARD_WIDTH * 2 / 3, 2 * PAN_DISTANCE + dragView.frame.origin.y);
     [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
