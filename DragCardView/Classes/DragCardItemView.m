@@ -85,7 +85,7 @@
     self.headerImageView.image = [UIImage imageNamed:self.infoDict[@"image"]];
 }
 
-#pragma mark-拖动手势
+/* 拖动手势 */
 - (void)beingDragged:(UIPanGestureRecognizer *)gesture {
     if (!self.canPan) {
         return;
@@ -117,17 +117,17 @@
     
 }
 
-#pragma mark--滑动时候，按钮变大
+/* 滑动时候，按钮变大 */
 - (void)updateOverLay:(CGFloat)distance {
     [self.delegate moveCards:distance];
 }
 
-#pragma mark--后续动作判断
+/* 后续动作判断 */
 - (void)followUpActionWithDistance:(CGFloat)distance andVelocity:(CGPoint)velocity {
     
     if (xFromCenter > 0 && (distance > ACTION_MARGIN_RIGHT || velocity.x > ACTION_VELOCITY)) {
         [self rightAction:velocity];
-    } else if (xFromCenter < 0 && (distance <- ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)){
+    } else if (xFromCenter < 0 && (distance < -ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)){
         [self leftAction:velocity];
     } else {
         //回到原点
@@ -214,7 +214,7 @@
     if (!self.canPan) {
         return;
     }
-    CGPoint finishPoint =CGPointMake(-CARD_WIDTH * 2 / 3, 2 * PAN_DISTANCE + self.frame.origin.y);
+    CGPoint finishPoint = CGPointMake(-CARD_WIDTH * 2 / 3, 2 * PAN_DISTANCE + self.frame.origin.y);
     [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
         self.noButton.transform = CGAffineTransformMakeScale(1.5, 1.5);
         self.center = finishPoint;

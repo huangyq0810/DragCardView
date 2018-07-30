@@ -45,7 +45,7 @@
     return  self;
 }
 
-#pragma mark--添加控件
+/* 添加控件 */
 - (void)addControls {
     UIButton *reloadBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [reloadBtn setTitle:@"重置" forState:UIControlStateNormal];
@@ -67,7 +67,7 @@
     [self addSubview:self.likeBtn];
 }
 
-#pragma mark--刷新所有卡片
+/* 刷新所有卡片 */
 - (void)refreshAllCards {
     self.sourceObject = [@[] mutableCopy];
     self.page = 0;
@@ -90,7 +90,7 @@
     }
 }
 
-#pragma mark--请求数据
+/* 请求数据 */
 - (void)requestSourceData:(BOOL)needLoad {
     
     if ([self.dataSource respondsToSelector:@selector(requestSourceData)]) {
@@ -110,7 +110,7 @@
         }
     }
 }
-#pragma mark--重新加载卡片
+/* 重新加载卡片 */
 - (void)loadAllCards {
     for (int i = 0; i < self.allCards.count; i++) {
         DragCardItemView *draggableView = self.allCards[i];
@@ -158,7 +158,7 @@
     }
 }
 
-#pragma mark--首次添加卡片
+/* 首次添加卡片 */
 - (void)addCards {
     for (int i = 0; i < CARD_NUM; i++) {
         DragCardItemView *draggableView = [[DragCardItemView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y - CARD_HEIGHT / 2, CARD_WIDTH, CARD_HEIGHT)];
@@ -182,7 +182,7 @@
     }
 }
 
-#pragma mark--滑动后续操作
+/* 滑动后续操作 */
 - (void)swipCard:(DragCardItemView *)cardView Direction:(BOOL)isRight {
     if (isRight) {
         [self like:cardView.infoDict];
@@ -218,7 +218,7 @@
     }
 }
 
-#pragma mark--滑动中更改其他卡片位置
+/* 滑动中更改其他卡片位置 */
 - (void)moveCards:(CGFloat)distance {
     if (fabs(distance)<= PAN_DISTANCE) {
         for (int i = 1; i < CARD_NUM - 1; i++) {
@@ -238,7 +238,7 @@
     }
 }
 
-#pragma mark--滑动终止后复原其他卡片
+/* 滑动终止后复原其他卡片 */
 - (void)moveBackCards {
     for (int i = 1; i < CARD_NUM - 1; i++) {
         DragCardItemView *draggableView = _allCards[i];
@@ -250,7 +250,7 @@
     }
 }
 
-#pragma mark--滑动后调整其他卡片位置
+/* 滑动后调整其他卡片位置 */
 - (void)adjustOtherCards {
     [UIView animateWithDuration:0.2 animations:^{
         for (int i = 1; i < CARD_NUM - 1; i++) {
@@ -265,15 +265,13 @@
     }];
 }
 
-#pragma nark--like
+/* 点击“喜欢”的后续操作 */
 - (void)like:(NSDictionary *)userInfo {
-    /** 在此添加“喜欢”的后续操作 */
     NSLog(@"like:%@",userInfo[@"number"]);
 }
 
-#pragma mark--dislike
+/* 点击“不喜欢”的后续操作 */
 - (void)unlike:(NSDictionary *)userInfo {
-    /** 在此添加“不喜欢”的后续操作 */
     NSLog(@"unlike:%@",userInfo[@"number"]);
 }
 
