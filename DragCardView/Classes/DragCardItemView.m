@@ -129,7 +129,7 @@
     
     if (xFromCenter > 0 && (distance > ACTION_MARGIN_RIGHT || velocity.x > ACTION_VELOCITY)) {
         [self rightAction:velocity];
-    } else if (xFromCenter < 0 && (distance < -ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)){
+    } else if (xFromCenter < 0 && (distance < -ACTION_MARGIN_RIGHT || velocity.x < -ACTION_VELOCITY)) {
         [self leftAction:velocity];
     } else {
         //回到原点
@@ -198,44 +198,6 @@
         if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
             [self.delegate swipCard:self Direction:NO];
         }
-    }];
-    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
-        [self.delegate adjustOtherCards];
-    }
-}
-
-- (void)rightButtonClickAction {
-    if (!self.canPan) {
-        return;
-    }
-    CGPoint finishPoint = CGPointMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH * 2/3, 2 * PAN_DISTANCE + self.frame.origin.y);
-    [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
-        self.yesButton.transform = CGAffineTransformMakeScale(1.5, 1.5);
-        self.center = finishPoint;
-        self.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
-    } completion:^(BOOL finished) {
-        self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
-        if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
-            [self.delegate swipCard:self Direction:YES];
-        }
-    }];
-    if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
-        [self.delegate adjustOtherCards];
-    }
-}
-
-- (void)leftButtonClickAction {
-    if (!self.canPan) {
-        return;
-    }
-    CGPoint finishPoint = CGPointMake(-CARD_WIDTH * 2 / 3, 2 * PAN_DISTANCE + self.frame.origin.y);
-    [UIView animateWithDuration:CLICK_ANIMATION_TIME animations:^{
-        self.noButton.transform = CGAffineTransformMakeScale(1.5, 1.5);
-        self.center = finishPoint;
-        self.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
-    } completion:^(BOOL finished) {
-        self.noButton.transform = CGAffineTransformMakeScale(1, 1);
-        [self.delegate swipCard:self Direction:NO];
     }];
     if ([self.delegate respondsToSelector:@selector(adjustOtherCards)]) {
         [self.delegate adjustOtherCards];

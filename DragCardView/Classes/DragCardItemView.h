@@ -34,8 +34,5 @@
 @property (nonatomic, strong) UIButton *noButton;
 @property (nonatomic, strong) UIButton *yesButton;
 
--(void)leftButtonClickAction;
--(void)rightButtonClickAction;
-
 @end
 

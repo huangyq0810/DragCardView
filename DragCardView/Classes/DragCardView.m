@@ -195,6 +195,9 @@
     cardView.canPan = NO;
     [self insertSubview:cardView belowSubview:[_allCards lastObject]];
     [_allCards addObject:cardView];
+//    [_allCards ];
+//    DragCardItemView *firstView = [_allCards firstObject];
+//    firstView.canPan = YES;
     if ([self.sourceObject firstObject] != nil) {
         
         cardView.infoDict = [self.sourceObject firstObject];
@@ -226,7 +229,7 @@
             DragCardItemView *preDraggableView = [_allCards objectAtIndex:i - 1];
             draggableView.transform = CGAffineTransformScale(draggableView.originalTransform, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.6, 1 + (1 / CARD_SCALE - 1) * fabs(distance / PAN_DISTANCE) * 0.8);//0.8为缩减因数，使放大速度始终小于卡片移动速度的
             CGPoint center = draggableView.center;
-            center.y = draggableView.originalCenter.y - (draggableView.originalCenter.y - preDraggableView.originalCenter.y) * fabs(distance/PAN_DISTANCE) * 0.8;//此处的0.8同上
+            center.y = draggableView.originalCenter.y - (draggableView.originalCenter.y - preDraggableView.originalCenter.y) * fabs(distance / PAN_DISTANCE) * 0.8;//此处的0.8同上
             draggableView.center = center;
         }
     }
