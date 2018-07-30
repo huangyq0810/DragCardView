@@ -78,8 +78,6 @@
             card.center = finishPoint;
             card.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
         } completion:^(BOOL finished) {
-            
-            card.yesButton.transform = CGAffineTransformMakeScale(1, 1);
             card.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
             card.hidden = YES;
             card.center = CGPointMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y);

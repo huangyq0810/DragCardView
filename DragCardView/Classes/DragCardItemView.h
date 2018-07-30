@@ -31,8 +31,6 @@
 @property (nonatomic, strong) NSDictionary *infoDict;
 @property (nonatomic, strong) UIImageView *headerImageView;
 @property (nonatomic, strong) UILabel *numLabel;
-@property (nonatomic, strong) UIButton *noButton;
-@property (nonatomic, strong) UIButton *yesButton;
 
 @end
 

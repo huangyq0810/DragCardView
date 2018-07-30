@@ -136,8 +136,6 @@
         [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:(UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseInOut) animations:^{
             self.center = self.originalCenter;
             self.transform = CGAffineTransformMakeRotation(0);
-            self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
-            self.noButton.transform = CGAffineTransformMakeScale(1, 1);
         } completion:nil];
         if ([self.delegate respondsToSelector:@selector(moveBackCards)]) {
             [self.delegate moveBackCards];
@@ -160,11 +158,9 @@
     }
     
     [UIView animateWithDuration:duration animations:^{
-        self.yesButton.transform = CGAffineTransformMakeScale(1.5, 1.5);
         self.center = finishPoint;
         self.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
     } completion:^(BOOL finished) {
-        self.yesButton.transform = CGAffineTransformMakeScale(1, 1);
         if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
             [self.delegate swipCard:self Direction:YES];
         }
@@ -190,11 +186,9 @@
         duration = 0.3;
     }
     [UIView animateWithDuration:duration animations:^{
-        self.noButton.transform = CGAffineTransformMakeScale(1.5, 1.5);
         self.center = finishPoint;
         self.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
     } completion:^(BOOL finished) {
-        self.noButton.transform = CGAffineTransformMakeScale(1, 1);
         if ([self.delegate respondsToSelector:@selector(swipCard:Direction:)]) {
             [self.delegate swipCard:self Direction:NO];
         }
