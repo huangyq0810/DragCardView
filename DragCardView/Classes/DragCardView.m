@@ -29,6 +29,8 @@
 
 @implementation DragCardView
 
+#pragma mark - 生命周期
+
 -(instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -67,26 +69,7 @@
     [self addSubview:self.likeBtn];
 }
 
-/* 刷新所有卡片 */
-- (void)refreshAllCards {
-    self.sourceObject = [@[] mutableCopy];
-    self.page = 0;
-    for (NSInteger i = 0; i < _allCards.count; i++) {
-        DragCardItemView *card = self.allCards[i];
-        CGPoint finishPoint = CGPointMake(-CARD_WIDTH, 2 * PAN_DISTANCE + card.frame.origin.y);
-        [UIView animateKeyframesWithDuration:0.5 delay:0.06 * i options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
-            card.center = finishPoint;
-            card.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
-        } completion:^(BOOL finished) {
-            card.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
-            card.hidden = YES;
-            card.center = CGPointMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y);
-            if (i == self.allCards.count - 1) {
-                [self requestSourceData:YES];
-            }
-        }];
-    }
-}
+#pragma mark - 数据请求
 
 /* 请求数据 */
 - (void)requestSourceData:(BOOL)needLoad {
@@ -108,6 +91,31 @@
         }
     }
 }
+
+#pragma mark - 卡片加载
+
+/* 刷新所有卡片 */
+- (void)refreshAllCards {
+    self.sourceObject = [@[] mutableCopy];
+    self.page = 0;
+    for (NSInteger i = 0; i < _allCards.count; i++) {
+        DragCardItemView *card = self.allCards[i];
+        CGPoint finishPoint = CGPointMake(-CARD_WIDTH, 2 * PAN_DISTANCE + card.frame.origin.y);
+        [UIView animateKeyframesWithDuration:0.5 delay:0.06 * i options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+            card.center = finishPoint;
+            card.transform = CGAffineTransformMakeRotation(-ROTATION_ANGLE);
+        } completion:^(BOOL finished) {
+            card.transform = CGAffineTransformMakeRotation(ROTATION_ANGLE);
+            card.hidden = YES;
+            card.center = CGPointMake([[UIScreen mainScreen] bounds].size.width + CARD_WIDTH, self.center.y);
+            if (i == self.allCards.count - 1) {
+                [self requestSourceData:YES];
+            }
+        }];
+    }
+}
+
+
 /* 重新加载卡片 */
 - (void)loadAllCards {
     for (NSInteger i = 0; i < self.allCards.count; i++) {
@@ -180,6 +188,8 @@
     }
 }
 
+#pragma mark - 滑动处理
+
 /* 滑动后续操作 */
 - (void)swipCard:(DragCardItemView *)cardView Direction:(BOOL)isRight {
     if (isRight) {
@@ -193,9 +203,7 @@
     cardView.canPan = NO;
     [self insertSubview:cardView belowSubview:[_allCards lastObject]];
     [_allCards addObject:cardView];
-//    [_allCards ];
-//    DragCardItemView *firstView = [_allCards firstObject];
-//    firstView.canPan = YES;
+    
     if ([self.sourceObject firstObject] != nil) {
         
         cardView.infoDict = [self.sourceObject firstObject];
@@ -265,6 +273,8 @@
         self.likeBtn.transform = CGAffineTransformMakeScale(1, 1);
     }];
 }
+
+#pragma mark - 按钮响应
 
 /* 点击“喜欢”的后续操作 */
 - (void)like:(NSDictionary *)userInfo {

@@ -27,6 +27,8 @@
 
 @implementation DragCardItemView
 
+#pragma mark - 生命周期
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -73,16 +75,18 @@
     
 }
 
+- (void)layoutSubviews {
+    self.namelabel.text = [NSString stringWithFormat:@"AK %@",self.infoDict[@"number"]];
+    self.headerImageView.image = [UIImage imageNamed:self.infoDict[@"image"]];
+}
+
+#pragma mark - 触发方法
+
 - (void)tapGesture:(UITapGestureRecognizer *)sender {
     if (!self.canPan) {
         return;
     }
     NSLog(@"tap");
-}
-
-- (void)layoutSubviews {
-    self.namelabel.text = [NSString stringWithFormat:@"AK %@",self.infoDict[@"number"]];
-    self.headerImageView.image = [UIImage imageNamed:self.infoDict[@"image"]];
 }
 
 /* 拖动手势 */
